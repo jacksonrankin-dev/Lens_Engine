@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/jackson-rankin/Developer/Lens_Engine/build",
+  "command": "/usr/bin/c++  -I/home/jackson-rankin/Developer/Lens_Engine/camera -I/home/jackson-rankin/Developer/Lens_Engine/color -I/home/jackson-rankin/Developer/Lens_Engine/materials -I/home/jackson-rankin/Developer/Lens_Engine/math_objects -I/home/jackson-rankin/Developer/Lens_Engine/objects -I/home/jackson-rankin/Developer/Lens_Engine/optics -std=gnu++23 -o CMakeFiles/Lens_Engine.dir/src/main.cpp.o -c /home/jackson-rankin/Developer/Lens_Engine/src/main.cpp",
+  "file": "/home/jackson-rankin/Developer/Lens_Engine/src/main.cpp",
+  "output": "CMakeFiles/Lens_Engine.dir/src/main.cpp.o"
+}
+]

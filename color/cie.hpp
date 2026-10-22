@@ -3,6 +3,8 @@
 #include <sstream>
 #include <vector>
 
+#pragma once
+
 struct CIE {
     // Data attributes
     static constexpr double lambda_min_ = 360.0;  // Lambda value lower bound in nm
@@ -10,11 +12,16 @@ struct CIE {
     static constexpr double increment_  = 1.0;    // Lambda increment value in nm
     static constexpr int sample_count_  = 471;    // Number of datapoints in this set
 
+    CIE()
+    {
+        LoadData();
+    }
+
     // Open the data
-    void LoadData(std::string filename = "color/CIE_xyz_1931_2deg.csv")
+    void LoadData(std::string filepath = "color/CIE_xyz_1931_2deg.csv")
     {
         // Try to open the file
-        std::ifstream file(filename);
+        std::ifstream file(filepath);
 
         // Prevents the data from doubling, should LoadData() be called twice
         x_bar_.clear();
